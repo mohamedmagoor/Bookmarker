@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;800&family=Alegreya:wght@400;500&family=Amatic+SC:wght@400;700&family=Assistant:wght@200&family=Bree+Serif&family=Cairo:wght@300;400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Bookmark</title>
+</head>
+<body>
+
+    <div class="container d-flex position-relative justify-content-center flex-column py-5">
+        <h1 class="position-relative mx-auto mb-5 ">Bookmarker </h1>
+
+        <div class="bookmarkbody mt-3 h-50">
+            <h2 class="iconn-bookmark text-center pb-4 pt-3">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+            <div class="site_name">
+                <label for="site-name" class="fw-semibold pb-2">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name
+                </label>
+                <input type="text" id="site-name" class="form-control mb-3" placeholder="Bookmark Name">
+            </div>
+            <div class="site-url mt-4">
+                <label for="site-url" class="fw-semibold pb-2">
+                    <i class="fa-solid fa-link pe-2"></i> Site Url
+                </label>
+                <input type="text" id="site-url" class="form-control mb-3" placeholder="Site Url">
+            </div>
+
+            <div class="sumbit">
+                <button  onclick="addUrlTabel ()" id="submitButton" type="button" class="btn btn-danger px-5 mx-auto d-block mb-4 mt-2 fw-bold">Submit</button>
+            </div>
+
+            
+        </div>
+
+
+            <table class="table mt-4 text-center">
+
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">Index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="tableContent">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>facebook</td>
+                        <td>
+
+                            <button id="visitButton" class="btn btn-primary text-white fw-bold"> <i class="fa-solid fa-eye me-1"></i>Visite</button>
+                        </td>
+                        <td><button id="deleteButton"  class="btn btn-danger text-white fw-bold"> <i class="fa-solid fa-trash-can me-1"></i>Delete</button></td>
+                    </tr> -->
+                </tbody>
+
+            </table>
+
+            <!-- <div class="alert-box" id="alert">
+                <div class="span-con d-flex justify-content-between">
+
+                    <div class="spans">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+                    <div class="X-button">
+                        <button id="Xbutton"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+            
+
+               
+                </div>
+                
+                <p>Site Name or Url is not valid, Please follow the rules below :</p>
+
+                <div class="first-msg mb-3">
+                    <i class="fa-solid fa-arrow-right me-2 "></i>Site name must contain at least 3 characters
+                </div>
+                <div class="first-msg">
+                    <i class="fa-solid fa-arrow-right me-2"></i>Site URL must be a valid one
+                </div>
+            </div> -->
+
+
+        
+    </div>
+
+   
+
+
+
+
+
+
+
+   
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
